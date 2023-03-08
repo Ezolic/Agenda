@@ -1,0 +1,10 @@
+.tarefas {
+    background-color: #581c8cd5;
+    padding: 15px;
+    border-radius: 15px;
+    
+
+}.tarefa h2, p {
+    word-wrap: break-word;
+    color: #fff;
+}

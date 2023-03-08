@@ -1,23 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { useState } from 'react';
+import BotaoAbrirModal from './componentes/BotaoAbrirModal';
+import Formulario from './componentes/Formulario';
+import Meses from './componentes/Meses';
 
 function App() {
+
+  const [tarefas, setTarefas] = useState([])
+
+  const aNovaTarefaCriada = (tarefa) => {
+    setTarefas([...tarefas, tarefa])
+  }
+
+
+  const [openModal, setOpenModal] = useState(false)
+
+  const Info = (a) => {
+    setOpenModal(a)
+  }
+
+
+  const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='container'>
+        <BotaoAbrirModal AbrirModal={Info} texto='+ Nova Tarefa' />
+      </div>
+      <div className='box'>
+        {meses.map(mes =>
+
+          <Meses
+            key={mes}
+            nome={mes}
+            tarefas={tarefas.filter(tarefa => tarefa.mes === mes)} />
+        )}
+
+
+      </div>
+      <Formulario meses={meses} FecharModal={Info} Aberto={openModal} aoTarefaCriada={tarefa => aNovaTarefaCriada(tarefa)} />
     </div>
   );
 }

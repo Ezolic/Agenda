@@ -1,0 +1,26 @@
+.campo-input {
+    margin: 24px 0;
+}
+
+.campo-input label {
+    display: block;
+    color: #581c8c;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.campo-input input {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 6px;
+    border-bottom: 3px solid #581c8c;
+    box-sizing: border-box;
+    color: #581c8c;
+    font-weight: bold;
+    font-size: 24px;
+} input::placeholder {
+    color: #581c8c;
+}

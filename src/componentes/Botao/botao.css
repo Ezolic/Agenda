@@ -1,0 +1,17 @@
+.btn {
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+
+} .btn button:hover {
+    transition: .4s;
+    background-color: #fff;
+    color: #581c8c;
+
+} .btn button {
+    cursor: pointer;
+    background-color: #581c8c;
+    color: #fff;
+}
