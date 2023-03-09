@@ -3,18 +3,17 @@
     position: absolute;
     left: 0;
     right: 0;
+    top: 20px;
     margin-left: auto;
     margin-right: auto;
-
-
     max-width: 600px;
     font-family: 'Quicksand', sans-serif;
     border-radius: 15px;
     padding: 25px;
-
-
     animation: slide-bottom .5s ease-in-out forwards;
-} .modal h2 {
+}
+
+.modal h2 {
     color: #581c8c;
 }
 
@@ -23,12 +22,12 @@
 @keyframes slide-bottom {
     0% {
         opacity: 0;
-        transform: translateY(-300%);
+        top: -20px;
     }
 
     100% {
         opacity: 1;
 
-        transform: translateY(-150px);
+        top: 20px;
     }
 }

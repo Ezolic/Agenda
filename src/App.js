@@ -10,6 +10,7 @@ function App() {
 
   const aNovaTarefaCriada = (tarefa) => {
     setTarefas([...tarefas, tarefa])
+    setOpenModal(false)
   }
 
 
