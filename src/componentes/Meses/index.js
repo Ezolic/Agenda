@@ -13,7 +13,6 @@ const Meses = (props) => {
                         key={tarefa.id}
                         tarefa={tarefa.tarefa}
                         dia={tarefa.dia}
-
                     />)
                 }
             </div>
