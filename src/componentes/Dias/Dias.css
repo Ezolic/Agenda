@@ -1,0 +1,27 @@
+.grid-dias {
+    border: 1px solid #581c8c;
+    border-radius: 10px;
+    margin: 24px 0;
+    padding: 10px;
+
+
+}
+
+.dias {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.dia {
+    width: 20px;
+    text-align: center;
+    border: 1px solid #581c8c;
+    border-radius: 10px;
+    padding: 10px;
+    color: #581c8c;
+    font-weight: bold;
+    font-size: 18px;
+
+} 
